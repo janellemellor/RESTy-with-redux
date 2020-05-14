@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Form Component matches a snapshot 1`] = `
+<ContextProvider
+  value={
+    Object {
+      "jsonBody": "",
+      "method": "GET",
+      "onChange": [Function],
+      "url": "",
+    }
+  }
+>
+  <Form
+    jsonBody="{}"
+    onChange={[Function]}
+    onSubmit={[Function]}
+    url="https://github.com/janellemellor"
+  />
+</ContextProvider>
+`;
