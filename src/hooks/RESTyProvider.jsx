@@ -16,12 +16,21 @@ export const RESTyProvider = ({ children }) => {
     setInputsFactory[target.name](target.value);
   };
 
-  
+  const context = {
+    url,
+    method, 
+    jsonBody, 
+    onChange
+  };
 
   return (
-    <RESTyContext.Provider >
+    <RESTyContext.Provider value={context} >
       {children}
     </RESTyContext.Provider>
   );
 };
 
+export const useRESTy = () => {
+  const context = useContext(RESTyContext);
+  return context;
+};
