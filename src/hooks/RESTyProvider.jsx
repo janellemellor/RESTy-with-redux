@@ -16,11 +16,16 @@ export const RESTyProvider = ({ children }) => {
     setInputsFactory[target.name](target.value);
   };
 
+  const onSubmit = (event) => {
+    event.preventDefault();
+  };
+
   const context = {
     url,
     method, 
     jsonBody, 
-    onChange
+    onChange,
+    onSubmit
   };
 
   return (

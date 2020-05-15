@@ -3,7 +3,7 @@ import { RadioButtonGroup, RadioButton } from './RadioButton';
 import { useRESTy } from '../../hooks/RESTyProvider';
 
 const Form = () => {
-  const { url, onChange, jsonBody } = useRESTy();
+  const { url, onChange, jsonBody, onSubmit } = useRESTy();
 
   return (
     <form onSubmit={onSubmit}>

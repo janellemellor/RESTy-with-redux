@@ -7,6 +7,7 @@ exports[`Form Component matches a snapshot 1`] = `
       "jsonBody": "",
       "method": "GET",
       "onChange": [Function],
+      "onSubmit": [Function],
       "url": "",
     }
   }
