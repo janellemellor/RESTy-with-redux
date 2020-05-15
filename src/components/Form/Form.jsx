@@ -1,9 +1,8 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { RadioButtonGroup, RadioButton } from './RadioButton';
 
-const Form = () => {
-
-  return (
+const Form = ({ onSubmit, onChange, url, jsonBody }) => (
     <form onSubmit={onSubmit}>
       <fieldset>
         <input name="url" type="text" value={url} onChange={onChange} />
@@ -19,6 +18,12 @@ const Form = () => {
       </fieldset>
     </form>
   );
-};
  
+Form.propTypes = {
+  onSubmit: PropTypes.func.isRequired, 
+  onChange: PropTypes.func.isRequired, 
+  url: PropTypes.string.isRequired, 
+  jsonBody: PropTypes.string
+};  
+
 export default Form;

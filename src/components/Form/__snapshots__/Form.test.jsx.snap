@@ -1,22 +1,46 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Form Component matches a snapshot 1`] = `
-<ContextProvider
-  value={
-    Object {
-      "jsonBody": "",
-      "method": "GET",
-      "onChange": [Function],
-      "onSubmit": [Function],
-      "url": "",
-    }
-  }
+<form
+  onSubmit={[Function]}
 >
-  <Form
-    jsonBody="{}"
-    onChange={[Function]}
-    onSubmit={[Function]}
-    url="https://github.com/janellemellor"
-  />
-</ContextProvider>
+  <fieldset>
+    <input
+      name="url"
+      onChange={[Function]}
+      type="text"
+      value="https://github.com/janellemellor"
+    />
+    <RadioButtonGroup
+      name="method"
+      onChange={[Function]}
+    >
+      <RadioButton
+        value="GET"
+      />
+      <RadioButton
+        value="POST"
+      />
+      <RadioButton
+        value="PUT"
+      />
+      <RadioButton
+        value="PATCH"
+      />
+      <RadioButton
+        value="DELETE"
+      />
+    </RadioButtonGroup>
+    <button>
+      Go!
+    </button>
+    <textarea
+      name="jsonBody"
+      onChange={[Function]}
+      value="{}"
+    >
+       
+    </textarea>
+  </fieldset>
+</form>
 `;
