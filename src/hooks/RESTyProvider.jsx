@@ -18,6 +18,7 @@ export const RESTyProvider = ({ children }) => {
 
   const onSubmit = (event) => {
     event.preventDefault();
+    fetchRequest(url, method, jsonBody);
   };
 
   const context = {
