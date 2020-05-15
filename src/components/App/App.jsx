@@ -1,9 +1,9 @@
 import React from 'react';
-import Form from '../Form/Form';
+import RESTyContainer from '../../containers/RESTyContainer';
 
 export default function App() {
   return (
-      <Form />
+      <RESTyContainer />
   )
 }
   
