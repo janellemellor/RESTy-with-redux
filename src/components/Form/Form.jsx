@@ -1,9 +1,7 @@
 import React from 'react';
 import { RadioButtonGroup, RadioButton } from './RadioButton';
-import { useRESTy } from '../../hooks/RESTyProvider';
 
 const Form = () => {
-  const { url, onChange, jsonBody, onSubmit } = useRESTy();
 
   return (
     <form onSubmit={onSubmit}>
