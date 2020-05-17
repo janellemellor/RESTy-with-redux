@@ -6,13 +6,10 @@ describe.skip('resty actions', () => {
   it('creates a set request action', () => {
     const action = setRequest({
       request: {
-    });
+    }});
+
     expect(action).toEqual({
       type: SET_REQUEST,
-      payload: [{
-        request: {
-        }
-    }];
     });
   });  
 })
